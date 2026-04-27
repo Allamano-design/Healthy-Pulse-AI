@@ -5,7 +5,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { toast } from 'sonner';
-import api from '@/lib/api';
+import { verifyEmail } from '../lib/api';
 
 const Verify = () => {
   const [code, setCode] = useState('');
@@ -29,7 +29,7 @@ const handleVerify = async (e) => {
 
   setIsLoading(true);
   try {
-    const response = await api.post('/auth/verify-email', { 
+    const response = await verifyEmail({ 
       email: email, // Ensure this matches the backend variable
       code: code 
     });
