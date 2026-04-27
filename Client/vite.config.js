@@ -24,5 +24,7 @@ export default defineConfig({
     outDir: "dist",
     emptyOutDir: true,
     sourcemap: false, // Keeps the build size smaller
+
+    target: 'esnext',
   },
 });

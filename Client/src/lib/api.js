@@ -1,7 +1,11 @@
 import axios from 'axios';
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+const API_URL = "https://healthy-pulse-ai.onrender.com";
 
-const response = await axios.post(`${API_URL}/api/auth/signup`, userData);
+export const signup = async (userData) => {
+  return await axios.post(`${API_URL}/api/auth/signup`, userData);
+};
+
+
 
 export default api;
