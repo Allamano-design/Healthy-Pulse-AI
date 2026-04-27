@@ -1,3 +1,2 @@
-# Welcome to your Lovable project
+# Welcome to AI Health Advisor project
 
-TODO: Document your project here
