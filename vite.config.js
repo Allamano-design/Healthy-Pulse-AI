@@ -7,11 +7,12 @@ export default defineConfig({
   server: {
     host: "::",
     port: 8080,
+    // Add this line to allow Render to host the site
+    allowedHosts: ["healthy-pulse-ai.onrender.com"],
   },
   plugins: [react()],
   resolve: {
     alias: {
-      // This allows you to use '@/components/...' instead of '../../components/...'
       "@": path.resolve(__dirname, "./src"),
     },
   },
