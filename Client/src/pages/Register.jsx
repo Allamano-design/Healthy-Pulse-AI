@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useAppStore } from '@/lib/store';
 import { toast } from 'sonner';
-import api from '@/lib/api'; 
+import { signup } from '../lib/api';
 
 const Register = () => {
   const [name, setName] = useState('');
@@ -33,7 +33,7 @@ const Register = () => {
 
     try {
       // 2. Connect to the Neural Hub (Backend)
-      const response = await api.post('/auth/register', {
+      const response = await signup({
         name,
         email,
         password
