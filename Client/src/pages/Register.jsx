@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useAppStore } from '@/lib/store';
 import { toast } from 'sonner';
-import api from '../lib/api'; 
+import api from '@/lib/api'; 
 
 const Register = () => {
   const [name, setName] = useState('');
