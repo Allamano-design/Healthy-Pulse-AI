@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useAppStore } from '@/lib/store';
 import { toast } from 'sonner';
-import api from '@/lib/api'; // Ensure this file exists in src/lib/api.js
+import api from '../lib/api'; 
 
 const Register = () => {
   const [name, setName] = useState('');

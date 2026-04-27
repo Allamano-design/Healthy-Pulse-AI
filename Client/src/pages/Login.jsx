@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useAppStore } from '@/lib/store';
 import { toast } from 'sonner';
-import api from '@/lib/api'; // Ensure your axios instance is imported
+import api from '../lib/api'; 
 
 const Login = () => {
   const [email, setEmail] = useState('');
